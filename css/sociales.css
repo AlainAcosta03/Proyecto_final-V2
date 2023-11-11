@@ -1,0 +1,62 @@
+footer a{
+    background: none;
+}
+
+#qr{
+    height: 100%;
+    grid-column: 2;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+#qr>img{
+    width: 80%;
+}
+
+#foot_izq{
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#foot_der{
+    margin: 0;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 12px;
+    top: 0;
+}
+
+#redes{
+    padding: 5px;
+    
+}
+
+#redes h3{
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#sociales{
+    width: 80%;
+    text-align: center; 
+}
+
+footer li{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+}
+
+footer ul{
+    margin: auto;
+    list-style: none;
+    text-decoration: none;
+}

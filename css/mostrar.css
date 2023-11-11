@@ -1,0 +1,30 @@
+center>th{text-align: center; padding: 20px;}
+center>td{text-align: center;}
+.imagen{height:100px;}
+
+center{
+    background: #9b9b9b;
+    margin: auto;
+    margin-top: 140px;
+    width: 50%;
+}
+@media screen and (max-width: 1550px){
+    center{
+        margin-top: 140px;
+        width: 800px;
+    }
+    center>th{padding: 0;}
+    center>*{font-size: 15px;}
+    .imagen{height: 60px;}
+}
+
+@media screen and (max-width: 868px){
+    center{
+        margin-top: 202px;
+        width: 500px;
+        margin-bottom: 150px;
+    }
+    center>th{padding: 0;}
+    center>*{font-size: 9px;}
+    .imagen{height: 50px;}
+}

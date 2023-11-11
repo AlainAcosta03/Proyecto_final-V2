@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background: #d3d3d3;
+    margin: 0;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+a:hover{background: #0000004d;}
+
+#fondo{
+    background-image: url(https://cdn.wallpapersafari.com/56/47/Mig6RL.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1,h4{text-align: center;color: #1455aa;}
+
+img{width: 80%; margin-left: 10%;}
+
+figcaption{font-size: 15px;margin-left: 10%;}
+
+main{
+    background: #d3d3d3;
+    width: 100%;
+    margin-top: 600px;
+    text-align: justify;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "cont cont noti"
+}
+
+#content{
+    background: #fff;
+    margin-left: 10%;
+    padding: 5%;
+    padding-top: 25px;
+    grid-area: cont;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,auto);
+
+    grid-template-areas:
+        "Title Title"
+        "intro intro"
+        "escena escena"
+        "plot plot"
+        "pers pers";
+}
+
+#content section{margin-bottom: 10px;}
+
+.Title{grid-area: Title;}
+
+.intro{
+    column-count: 2;
+    column-width: 50%;
+    column-gap: 15px;
+    grid-area: intro;
+}
+
+.intro2{
+    grid-area: Title;
+}
+
+.intro img{
+    width: 70%;
+    margin: 0 15%;
+}
+
+.escenario{grid-area: escena;}
+
+.trama{grid-area: plot;}
+
+.persona{grid-area: pers;}
+
+
+
+#noticias{
+    background: #0c2a52;
+    color: #fff;
+    padding: 10px;
+    margin-right: 20%;
+    grid-area: noti;
+}
+
+.noti-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.noti-content div{
+    border-top: 5px dashed #1455aa;
+}
+
+footer{
+    background: #000;
+    color: #fff;
+    width: 100%;
+    height: 120px;
+    position: relative;
+}
+
+table{
+    background: #d3d3d3;
+    border-spacing: 0;
+}
+tr,td,th{
+    border: 1px solid #0c2a52;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.collage{
+    width: 100%;
+    height: 500px;
+    background: red;
+    position: relative;
+}
+
+.uno{position: absolute; width: 200px; left: -101px; z-index: 2;}
+.dos{position: absolute; width: 500px; left: -101px; z-index: 1;}
+.tres{position: absolute; width: 300px; left: 133px; z-index:3;}
+.cuatro{position: absolute; width: 400px; right: 0px; z-index:3;}
+.cinco{position: absolute; width: 250px; right: 300px; bottom: 0; z-index:0;}
+.seis{position: absolute; width: 300px; right: 0px; bottom: 0; z-index:3;}
+
+@media screen and (max-width: 1550px){
+    body{background-size: contain;}
+    main{margin-top: 505px;}
+}
+
+@media screen and (max-width: 868px){
+
+    html{font-size: 15px;}
+    main{margin-top: 280px;}
+    img{width: 100%; margin: auto;}
+    #toogleNav{display: block;}
+
+    nav ul{flex-wrap: wrap;}
+
+    nav li{flex:1 1 50%;}
+
+    .pag{font-size: 15px;}
+
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr,1fr;
+        grid-template-areas:
+            "cont"
+            "noti";
+    }
+
+    #content{margin-left: 0;}
+    #noticias{margin-right: 0;padding-bottom: 30px;}
+    #carrusel{width: 100%;}
+
+    table{
+        width: 100%; 
+    }
+    table>*{
+        font-size: 8px;
+    }
+
+}
